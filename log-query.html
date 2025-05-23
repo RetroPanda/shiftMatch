@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log a Query - ShiftMatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="top-nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="ShiftMatch - Trusted Source for Talent">
+                </a>
+            </div>
+            <ul class="main-menu">
+                <li><a href="temp-nurse.html">Temp Nurse Jobs</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="shiftmatch-app.html">ShiftMatch App</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="log-query.html">Log a Query</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="query-page">
+        <section class="log-query-hero">
+            <h1>Log a Query</h1>
+            <p>We're here to help resolve your concerns</p>
+        </section>
+
+        <section class="query-form">
+            <form>
+                <div class="form-group">
+                    <label for="query-type">Query Type</label>
+                    <select id="query-type" required>
+                        <option value="">Select Query Type</option>
+                        <option value="technical">Technical Issue</option>
+                        <option value="payment">Payment Query</option>
+                        <option value="general">General Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reference">Reference Number (if applicable)</label>
+                    <input type="text" id="reference">
+                </div>
+                <div class="form-group">
+                    <label for="description">Query Description</label>
+                    <textarea id="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="attachments">Attachments</label>
+                    <input type="file" id="attachments" multiple>
+                </div>
+                <button type="submit" class="submit-btn">Submit Query</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... existing footer code ... -->
+    </footer>
+</body>
+</html> 
